@@ -1,0 +1,17 @@
+.album {
+    width: 25%;
+    height: 25%;
+}
+
+#album-container {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: center;
+    justify-content: center;
+}
+
+/*section#section1 {*/
+/*    flex-direction: column;*/
+/*}*/

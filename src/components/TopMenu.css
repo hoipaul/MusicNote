@@ -1,0 +1,43 @@
+
+.active-link {
+    border-bottom: 2px solid #7A306C;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    color: #7A306C;
+    margin-left: 15px;
+}
+
+nav {
+    width: 100%;
+    background-color: #A9E4EF;
+    display: flex;
+    justify-content: center;
+    height: 180px;
+    font-size: 23px;
+    align-items: center;
+    border-radius: 30px;
+    border-color: #7A306C;
+    border-style: solid;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 750px;
+    margin-right: 75px;
+}
+
+a,
+a:visited,
+a:hover {
+    color: #7A306C;
+    text-decoration: none;
+}

@@ -1,15 +1,14 @@
 import React, {useContext, useState} from "react";
 import axios from "axios";
 
-export default function SearchMusicBrainz() {
+function SearchAlbum() {
     // const {selectedCountries, setSelectedCountries} = useContext(selectedOptionsContext);
 
     const [searchResponse, setSearchResponse] = useState({});
 
-
-    async function fetchData() {
+    async function fetchAlbumData() {
         try {
-            const response = await axios.get("https://musicbrainz.org/ws/2/artist/?query=type:group%20AND%20country:NL&fmt=json");
+            const response = await axios.get("https://musicbrainz.org/ws/2/release/?query=release:Patience%20&fmt=json");
             console.log(response);
             console.log(response.data.count);
             setSearchResponse(response.data);
@@ -20,6 +19,8 @@ export default function SearchMusicBrainz() {
     }
 
     return (
-        <button onClick={() => fetchData()}>Search MusicBrainz</button>
+        <button onClick={() => fetchAlbumData()}>Zoek album</button>
     )
 }
+
+export default SearchAlbum

@@ -3,6 +3,7 @@ import TopMenu from "./components/TopMenu";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Login from "./pages/Login";
+import Profile from "./pages/Profile";
 import Search from "./pages/Search";
 import Signup from "./pages/Signup";
 import './App.css';
@@ -25,12 +26,15 @@ function App() {
                 <Route path="/search">
                     <Search/>
                 </Route>
+                <Route path="/profile">
+                    <Profile/>
+                </Route>
                 <Route path="/about">
                     <About/>
                 </Route>
-            </Switch>
-        </Router>
-    );
+        </Switch>
+</Router>
+);
 }
 
 export default App;

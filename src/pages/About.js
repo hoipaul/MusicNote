@@ -1,6 +1,7 @@
 import React from "react";
 import '../pages/About.css';
 import spotlight from "../assets/spotlights.jpeg";
+import artist_banner from "../assets/artist_banner.jpg";
 
 function About() {
     return (
@@ -15,14 +16,16 @@ function About() {
                     Veel plezier met het gebruiken ervan!
                 </p>
                 <p>
-                    Mede mogelijk gemaakt door Spotify &#169;
+                    Mede mogelijk gemaakt door MusicBrainz &#169;
                     All rights reserved &#169; 2021
                 </p>
             </article>
             <figure>
+                <img id="artist_banner" src={artist_banner} alt="artist banner"/>
+            </figure>
+            <figure>
                 <img id="spotlight" src={spotlight} alt="spotlight"/>
             </figure>
-
         </>
     );
 }

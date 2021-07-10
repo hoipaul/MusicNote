@@ -12,6 +12,10 @@
     justify-content: center;
 }
 
-/*section#section1 {*/
-/*    flex-direction: column;*/
-/*}*/
+section#section1 {
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}

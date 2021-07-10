@@ -8,6 +8,7 @@ import lars from "../assets/albumCovers/lars.jpeg"
 import sour from "../assets/albumCovers/sour.jpg"
 import AlbumTile from "../components/AlbumTile";
 import '../pages/Home.css';
+import RandomImage from "../components/RandomImage";
 
 function HomePage() {
     return (
@@ -16,18 +17,19 @@ function HomePage() {
                 <img id="homeImage" src={concert} alt="concert"/>
             </figure>
             <div id="page-container">
-                <h1>Welkom bij de MusicNote App van Paul</h1>
+                <h1>Welkom bij de MusicNote App &#8482; van Paul</h1>
                 <h2>Voor liefhebbers van muziek van alle genres!
                 </h2>
                 <p>Zoek informatie op over jouw favoriete artiest!
-                    Meer informatie over albums, tracks en genres.
+                    <p>Welke muziek vind jij vandaag?</p>
+                    <p>Navigeer in het menu hierboven handig naar de pagina die je wil bezoeken.</p>
                 </p>
                 <p>Populaire albums van dit moment zijn:</p>
                 <fieldset>
-                    <section>
+                    <section id="covers">
                         <AlbumTile
                             img={dua_lipa}
-                            click="href='http://www.dualipa.com'"
+                            onClick={'http://www.dualipa.com'}
                         />
                         <AlbumTile
                             img={en_door}
@@ -46,6 +48,7 @@ function HomePage() {
                         {/*/>*/}
                     </section>
                 </fieldset>
+                {/*<RandomImage/>*/}
             </div>
         </>
     )

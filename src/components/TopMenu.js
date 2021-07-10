@@ -15,25 +15,21 @@ function TopMenu() {
                             Home
                         </NavLink>
                     </li>
-
                     <li>
                         <NavLink to="/login" activeClassName="active-link">
                             Inloggen
                         </NavLink>
                     </li>
-
                     <li>
                         <NavLink to="/signup" activeClassName="active-link">
                             Aanmelden
                         </NavLink>
                     </li>
-
                     <li>
                         <NavLink to="/search" activeClassName="active-link">
                             Zoeken
                         </NavLink>
                     </li>
-
                     <li>
                         <NavLink to="/about" activeClassName="active-link">
                             Over ons

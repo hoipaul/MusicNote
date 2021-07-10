@@ -46,7 +46,7 @@ function SignupForm() {
         <>
             <h1>Meld je aan bij MusicNote &#8482;</h1>
             <p>En krijg toegang tot alle handige functies!</p>
-            <fieldset className="fieldset">
+            <fieldset className="fieldset2">
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <label htmlFor="email-field">
                         E-mailadres:

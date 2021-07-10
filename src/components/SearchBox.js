@@ -10,11 +10,14 @@ import no_doubt from "../assets/albumCovers/no_doubt.jpeg"
 import abbey from "../assets/albumCovers/abbey.jpeg"
 import tina from "../assets/albumCovers/tina.jpeg"
 import '../pages/Search.css';
-import MusicBrainz from "./MusicBrainz";
+import SearchArtist from "./SearchArtist";
+import SearchAlbum from "./SearchAlbum";
+import SearchTrack from "./SearchTrack";
+// import {authContext} from "../contexts/AuthContext";
 
 function Search() {
     const {handleSubmit, register} = useForm();
-    const onSubmit = (data) => alert(JSON.stringify(data));
+    const onSubmit = (data) => JSON.stringify(data);
 
     return (
         <>
@@ -29,35 +32,27 @@ function Search() {
                             {...register("search-artist")}
                         />
                     </label>
-                    <MusicBrainz/>
-                    {/*<label htmlFor="search-album">*/}
-                    {/*    Zoek op album*/}
-                    {/*    <input*/}
-                    {/*        type="search-album"*/}
-                    {/*        id="search-album-field"*/}
-                    {/*        name="search-album"*/}
-                    {/*        {...register("search-album")}*/}
-                    {/*    />*/}
-                    {/*</label>*/}
-                    {/*<button*/}
-                    {/*    type="submit"*/}
-                    {/*    className="search-button">*/}
-                    {/*    Zoeken*/}
-                    {/*</button>*/}
-                    {/*<label htmlFor="search-track">*/}
-                    {/*    Zoek op track*/}
-                    {/*    <input*/}
-                    {/*        type="search-track"*/}
-                    {/*        id="search-track-field"*/}
-                    {/*        name="search-track"*/}
-                    {/*        {...register("search-track")}*/}
-                    {/*    />*/}
-                    {/*</label>*/}
-                    {/*<button*/}
-                    {/*    type="submit"*/}
-                    {/*    className="search-button">*/}
-                    {/*    Zoeken*/}
-                    {/*</button>*/}
+                    <SearchArtist/>
+                    <label htmlFor="search-album">
+                        Zoek op album
+                        <input
+                            type="search-album"
+                            id="search-album-field"
+                            name="search-album"
+                            {...register("search-album")}
+                        />
+                    </label>
+                    <SearchAlbum/>
+                    <label htmlFor="search-track">
+                        Zoek op track
+                        <input
+                            type="search-track"
+                            id="search-track-field"
+                            name="search-track"
+                            {...register("search-track")}
+                        />
+                    </label>
+                    <SearchTrack/>
                 </form>
             </fieldset>
             <fieldset className="fieldsetAlbum">

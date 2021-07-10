@@ -42,3 +42,8 @@ fieldset {
     border-radius: 25px;
     border-style: none;
 }
+
+.artists {
+    display: inline-block;
+    justify-content: center;
+}

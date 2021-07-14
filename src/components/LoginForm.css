@@ -1,8 +1,11 @@
+.login-field {
+ margin-left: 30px;
+}
+
 form {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    width: 300px;
+    width: 250px;
     border-radius: 25px;
 }
 
@@ -24,6 +27,17 @@ button {
     margin-left: 35px;
 }
 
+#email-field{
+    border-radius: 4px;
+    border: 2px solid;
+}
+
 #username-field {
     border-radius: 4px;
+    border: 2px solid;
+}
+
+#password-field {
+    border-radius: 4px;
+    border: 2px solid;
 }

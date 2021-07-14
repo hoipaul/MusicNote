@@ -1,5 +1,21 @@
-section {
+.profile-container {
     display: flex;
-    justify-content: center;
-    flex-flow: column;
+    flex-direction: row;
+}
+
+.private-content {
+    width: 200%;
+}
+
+.profile-image {
+    height: 400%;
+    width: 400%;
+}
+
+#earphones {
+    width: 80%;
+    height: 80%;
+    margin-left: 30px;
+    margin-right: 20px;
+    border-radius: 25px;
 }

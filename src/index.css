@@ -1,40 +1,23 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-/*@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');*/
-/*@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@700&display=swap');*/
 
 body {
     margin: 16px;
     background-color: #8E8DBE;
     font-family: 'Poppins', 'Arial', sans-serif;
-    /*-webkit-font-smoothing: antialiased;*/
     -moz-osx-font-smoothing: grayscale;
 }
 
-/*h1 {*/
-/*    margin: 16px;*/
-/*}*/
-
-/*p {*/
-/*    !*font-family: Arial, sans-serif;*!*/
-/*    margin: 16px;*/
-/*}*/
-
-#head {
-    width: 60px;
+h1 {
+    font-size: 45px;
 }
 
-img {
-    width: 35%;
-    height: 35%;
-    margin-right: 16px;
+h2 {
+    font-size: 25px;
 }
 
 .artists {
-    margin: 16px;
     display: flex;
-    /*width: 400%;*/
-    /*height: 200%;*/
+    margin: 16px;
 }
 
 article {
@@ -57,6 +40,6 @@ article {
     border-radius: 25px;
 }
 
-#spotify {
-    margin-left: 85px;
-}
+/*.submit-form {*/
+/*    justify-content: center*/
+/*}*/

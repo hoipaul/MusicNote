@@ -4,7 +4,7 @@ import {Link, useHistory} from 'react-router-dom';
 import {useForm} from 'react-hook-form';
 import '../components/SignupForm.css';
 
-function SignupForm() {
+export default function SignupForm() {
     const [loading, toggleLoading] = useState(false);
     const [error, setError] = useState('');
     const [registerSuccess, toggleRegisterSuccess] = useState(false);
@@ -43,11 +43,10 @@ function SignupForm() {
     }
 
     return (
-        <>
-            <h1>Meld je aan bij MusicNote &#8482;</h1>
-            <p>En krijg toegang tot alle handige functies!</p>
-            <fieldset className="fieldset2">
-                <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="signup-field">
+            <h2>En krijg toegang tot alle handige functies!</h2>
+            <fieldset className="fieldset">
+                <form className="submit-form" onSubmit={handleSubmit(onSubmit)}>
                     <label htmlFor="email-field">
                         E-mailadres:
                         <input
@@ -143,10 +142,8 @@ function SignupForm() {
                         error && <p className="error-message">{error}</p>
                     }
                 </form>
-                <p>Heb je al een account? Je kunt je <Link to="/Login">hier</Link> inloggen.</p>
+                <p>Heb je al een account? Je kunt je dan <Link to="/Login">hier</Link> inloggen.</p>
             </fieldset>
-        </>
-    );
-}
-
-export default SignupForm;
+        </div>
+    )
+};

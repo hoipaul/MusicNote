@@ -2,10 +2,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px 0;
+    margin: 10px 0;
 }
 
-#head {
-    border-radius: 5px;
+#header {
+    display: flex;
+    justify-content: center;
+    margin-left: 55px;
+    margin-right: 16px;
+    border-radius: 25px;
     height: auto;
+    width: 35%;
 }

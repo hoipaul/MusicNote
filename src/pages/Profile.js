@@ -2,12 +2,14 @@ import React, {useContext, useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
 import {authContext} from '../context/AuthContext';
+import earphones from "../assets/earphones.jpeg";
+import RegionSelect from "../components/RegionSelect";
+import Footer from "../components/Footer";
 import '../pages/Search.css';
 import '../pages/Profile.css';
 
-function Profile() {
+export default function Profile() {
     const [privateContent, setPrivateContent] = useState({});
-
     const {user} = useContext(authContext);
 
     useEffect(() => {
@@ -34,26 +36,31 @@ function Profile() {
 
     return (
         <>
-            <h1>Profielpagina</h1>
-            <section>
-                <h2>Gebruikersgegevens:</h2>
-                {user &&
-                <>
-                    <p><strong>Gebruikersnaam:</strong> {user.username}</p>
-                    <p><strong>Email:</strong> {user.email}</p>
-                </>
-                }
-            </section>
-            {privateContent &&
-            <section>
-                <h2>Priv&#233; voor ingelogde gebruikers</h2>
-                <h4>{privateContent.title}</h4>
-                <p>{privateContent.content}</p>
-            </section>
-            }
-            <p>Terug naar de <Link to="/">Homepagina</Link></p>
+            <h1>Jouw MusicNote &#8482; profielpagina</h1>
+            <div className="profile-container">
+                <div className="private-content">
+                    <section>
+                        <RegionSelect/>
+                        <h2>Mijn gebruikersgegevens:</h2>
+                        {user &&
+                        <>
+                            <p><strong>Gebruikersnaam:</strong> {user.username}</p>
+                            <p><strong>Email:</strong> {user.email}</p>
+                        </>
+                        }
+                    </section>
+                    {privateContent &&
+                    <section>
+                        <h2>Priv&#233; alleen voor ingelogde gebruikers</h2>
+                        <h4>{privateContent.title}</h4>
+                        <p>{privateContent.content}</p>
+                    </section>
+                    }
+                </div>
+                <div className="profile-image"><img id="earphones" src={earphones} alt="earphones"/></div>
+            </div>
+            <h3>Terug naar de <Link to="/">Homepagina</Link></h3>
+            <Footer/>
         </>
     );
-}
-
-export default Profile;
+};

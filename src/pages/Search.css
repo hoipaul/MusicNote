@@ -1,21 +1,25 @@
-.album {
-    width: 25%;
-    height: 25%;
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
 }
 
-#album-container {
-    height: auto;
-    width: auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-items: center;
-    justify-content: center;
+.album-block {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
 }
 
-section#section1 {
-    display: flex;
-    height: auto;
-    width: auto;
-    justify-content: center;
-    align-items: center;
+#search-artist-field {
+    border-radius: 4px;
+    border-style: solid;
+}
+
+#search-album-field {
+    border-radius: 4px;
+    border-style: solid;
+}
+
+#search-track-field {
+    border-radius: 4px;
+    border-style: solid;
 }

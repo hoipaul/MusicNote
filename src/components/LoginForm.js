@@ -5,12 +5,12 @@ import {Link, useHistory} from "react-router-dom";
 import {authContext} from "../context/AuthContext";//deze regel aan -> inlogmelding weg
 import '../components/LoginForm.css';
 
-function LoginForm() {
+export default function LoginForm() {
 
     const {handleSubmit, register, formState: {errors, isDirty, isValid}} = useForm({mode: "onChange"});
     const [error, setError] = useState('');
     // const {login} = useContext(authContext);//deze regel -> inlogmelding weg
-    const history = useHistory(); //toegevoegd
+    const history = useHistory();
     const [loginSuccess, toggleLoginSuccess] = useState(false);
 
     async function onSubmit(data) {
@@ -24,7 +24,7 @@ function LoginForm() {
             toggleLoginSuccess(true);
             setTimeout(() => {
                 history.push('/profile');
-            }, 2000); // dit blokje ook toegevoegd
+            }, 2000);
 
         } catch (e) {
             console.error(e);
@@ -33,71 +33,71 @@ function LoginForm() {
     }
 
     return (
-        <fieldset>
-            <form onSubmit={handleSubmit(onSubmit)}>
-                <label htmlFor="username-field">
-                    Gebruikersnaam:
-                    <input
-                        type="text"
-                        id="username-field"
-                        name="username"
-                        {...register("username",
-                            {
-                                required: {
-                                    value: true,
-                                    message: 'Vul au.b. een gebruikersnaam in',
-                                },
-                                minLength: {
-                                    value: 6,
-                                    message: 'Een geldige gebruikersnaam bevat minimaal 6 karakters'
-                                },
-                                maxLength: {
-                                    value: 10,
-                                    message: 'Een geldige gebruikersnaam bevat maximaal 10 karakters'
-                                },
-                            })}
-                    />
-                    {errors.username && <p className="error-message">{errors.username.message}</p>}
-                </label>
+        <div className="login-field">
+            <fieldset className="field-set">
+                <h2>Log hier in en zoek naar al jouw favoriete muziek!</h2>
+                <form className="submit-form" onSubmit={handleSubmit(onSubmit)}>
+                    <label htmlFor="username-field">
+                        Gebruikersnaam:
+                        <input
+                            type="text"
+                            id="username-field"
+                            name="username"
+                            {...register("username",
+                                {
+                                    required: {
+                                        value: true,
+                                        message: 'Vul au.b. een gebruikersnaam in',
+                                    },
+                                    minLength: {
+                                        value: 6,
+                                        message: 'Een geldige gebruikersnaam bevat minimaal 6 karakters'
+                                    },
+                                    maxLength: {
+                                        value: 10,
+                                        message: 'Een geldige gebruikersnaam bevat maximaal 10 karakters'
+                                    },
+                                })}
+                        />
+                        {errors.username && <p className="error-message">{errors.username.message}</p>}
+                    </label>
 
-                <label htmlFor="password-field">
-                    Wachtwoord:
-                    <input
-                        type="text"
-                        id="password-field"
-                        name="password"
-                        {...register("password",
-                            {
-                                required: {
-                                    value: true,
-                                    message: 'Vul a.u.b. een wachtwoord in',
-                                },
-                                minLength: {
-                                    value: 6,
-                                    message: 'Een geldig wachtwoord bevat tenminste 6 karakters',
-                                },
-                                maxLength: {
-                                    value: 10,
-                                    message: 'Een geldig wachtwoord bevat maximaal 10 karakters',
-                                },
-                            })}
-                    />
-                    {errors.password && <p className="error-message">{errors.password.message}</p>}
-                </label>
-                <button
-                    type="submit"
-                    className="form-button"
-                    disabled={!isDirty || !isValid}
-                >
-                    Inloggen
-                </button>
-                {loginSuccess === true &&
-                <p>Inloggen is gelukt! Je wordt nu doorgestuurd naar jouw profielpagina!</p>}
-                {error && <p className="error-message">{error}</p>}
-            </form>
-            <p>Een eigen gratis account aanmaken? Klik dan <Link to="/signup">hier</Link>.</p>
-        </fieldset>
+                    <label htmlFor="password-field">
+                        Wachtwoord:
+                        <input
+                            type="text"
+                            id="password-field"
+                            name="password"
+                            {...register("password",
+                                {
+                                    required: {
+                                        value: true,
+                                        message: 'Vul a.u.b. een wachtwoord in',
+                                    },
+                                    minLength: {
+                                        value: 6,
+                                        message: 'Een geldig wachtwoord bevat tenminste 6 karakters',
+                                    },
+                                    maxLength: {
+                                        value: 10,
+                                        message: 'Een geldig wachtwoord bevat maximaal 10 karakters',
+                                    },
+                                })}
+                        />
+                        {errors.password && <p className="error-message">{errors.password.message}</p>}
+                    </label>
+                    <button
+                        type="submit"
+                        className="form-button"
+                        disabled={!isDirty || !isValid}
+                    >Inloggen
+                    </button>
+                    {loginSuccess === true &&
+                    <p>Inloggen is gelukt! Je wordt nu doorgestuurd naar jouw profielpagina!</p>}
+                    {error && <p className="error-message">{error}</p>}
+                </form>
+                <h3>Een eigen gratis account aanmaken? Klik dan <Link to="/signup">hier!</Link>.</h3>
+            </fieldset>
+        </div>
     )
-}
-
-export default LoginForm;
+};

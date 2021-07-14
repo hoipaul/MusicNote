@@ -44,11 +44,11 @@ Door dit commando in te voeren in het terminalvenster wordt de app geopend in je
 (In de IDE WebStorm kun je hiervoor ook de knop (npm start) gebruiken.)
 
 
-Vervolgens kun je de app in je browser bekijken en gebruiken via [http://localhost:3000](http://localhost:3000).
+Vervolgens kun je de app in je browser bekijken en gebruiken via [http://localhost:3000](http://localhost:3000)
 
 ## 4. Registreren
 
-Voordat je kunt inloggen dien je je eerst te registreren via het tabblad 'aanmelden' met je email-adres en een zelfgekozen gebruikersnaam en wachtwoord.
+Voordat je kunt inloggen dien je je eerst te registreren via het tabblad 'aanmelden' met je e-mailadres en een zelfgekozen gebruikersnaam en wachtwoord.
 
 Voorwaarden:
 - Je gebruikersnaam dient tussen 6 en 10 karakters lang te zijn.

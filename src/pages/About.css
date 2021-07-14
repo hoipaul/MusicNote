@@ -1,14 +1,13 @@
-#Elvis {
-    border-radius: 25px;
-}
-
-#Prince {
-    border-radius: 25px;
-}
-
 #artist_banner {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
+}
+
+#spotlight {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    margin-top: 20px;
 }

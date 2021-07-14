@@ -1,0 +1,23 @@
+.search-result-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#album-result {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.album-specs {
+    margin-left: 20px;
+    width: 50%;
+}
+
+.tracklist {
+    width: 50%
+}
+
+#return-button {
+    font-size: 20px;
+}

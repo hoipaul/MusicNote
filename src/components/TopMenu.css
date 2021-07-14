@@ -1,25 +1,25 @@
-
 .active-link {
-    border-bottom: 2px solid #7A306C;
+    border-bottom: 3px solid #7A306C;
 }
 
 .nav-container {
-    width: 100%;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
+    width: 100%;
     color: #7A306C;
-    margin-left: 15px;
+    margin-right: 50px;
 }
 
 nav {
-    width: 100%;
-    background-color: #A9E4EF;
     display: flex;
-    justify-content: center;
-    height: 180px;
-    font-size: 23px;
+    justify-content: flex-start;
     align-items: center;
+    height: 240px;
+    width: 100%;
+    min-width: 550px;
+    background-color: #A9E4EF;
+    font-size: 23px;
     border-radius: 30px;
     border-color: #7A306C;
     border-style: solid;
@@ -31,8 +31,9 @@ nav ul {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    flex-basis: 750px;
-    margin-right: 75px;
+    flex-basis: 2000px;
+    margin-left: 20px;
+    font-size: 30px;
 }
 
 a,

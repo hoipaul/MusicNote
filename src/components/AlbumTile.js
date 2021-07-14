@@ -1,12 +1,12 @@
 import React from 'react';
 import '../components/AlbumTile.css';
 
-function AlbumTile({img}) {
+export default function AlbumTile({URL, img}) {
     return (
-        <article>
-            <img id="popular" src={img} alt="popular album"/>
-        </article>
+        <figcaption>
+            <a href={URL}>
+                <img id="popular" src={img} alt="popular album"/>
+            </a>
+        </figcaption>
     );
-}
-
-export default AlbumTile;
+};

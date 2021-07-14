@@ -5,7 +5,7 @@ import {useHistory} from 'react-router-dom';
 
 export const authContext = createContext({});
 
-function AuthContextProvider({children}) {
+export default function AuthContextProvider({children}) {
     const [authState, setAuthState] = useState({
         user: null,
         status: 'pending',
@@ -94,6 +94,4 @@ function AuthContextProvider({children}) {
             }
         </authContext.Provider>
     );
-}
-
-export default AuthContextProvider;
+};

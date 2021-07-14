@@ -5,16 +5,23 @@
 }
 
 #page-container {
-    margin-left: 100px;
+    text-align: center;
 }
 
-section#covers {
+#covers {
     display: flex;
     align-items: center;
     height: auto;
     width: auto;
     flex-flow: row wrap;
     justify-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+}
 
+#popular-text {
+    text-align: center;
+}
+
+#popular-container {
+    margin-top: 40px;
 }

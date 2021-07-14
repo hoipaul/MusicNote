@@ -1,10 +1,10 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
-import logo from '../assets/music-note.jpg'
+import logo from '../assets/music-note.jpg';
 import PageHeader from "./PageHeader";
 import '../components/TopMenu.css';
 
-function TopMenu() {
+export default function TopMenu() {
     return (
         <nav>
             <div className="nav-container">
@@ -39,6 +39,4 @@ function TopMenu() {
             </div>
         </nav>
     );
-}
-
-export default TopMenu;
+};

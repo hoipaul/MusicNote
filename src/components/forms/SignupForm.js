@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import axios from 'axios';
 import {Link, useHistory} from 'react-router-dom';
 import {useForm} from 'react-hook-form';
-import '../components/SignupForm.css';
 
 export default function SignupForm() {
     const [loading, toggleLoading] = useState(false);

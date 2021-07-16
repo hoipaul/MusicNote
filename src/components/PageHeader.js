@@ -2,7 +2,7 @@ import React from 'react';
 import '../components/PageHeader.css';
 import {useHistory} from 'react-router-dom';
 
-export default function PageHeader({icon, title}) {
+export default function PageHeader({icon, title, headerTitle}) {
     const history = useHistory();
 
     function handleClick() {
@@ -11,7 +11,7 @@ export default function PageHeader({icon, title}) {
 
     return (
         <div className="title-container">
-            <img id="header" src={icon} alt={title} onClick={handleClick}/>
+            <img id="header" src={icon} alt={title} title={headerTitle} onClick={handleClick}/>
             <h1>{title}</h1>
         </div>
     );

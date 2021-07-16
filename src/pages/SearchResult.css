@@ -21,3 +21,15 @@
 #return-button {
     font-size: 20px;
 }
+
+#return-button:hover {
+    cursor: pointer;
+}
+
+#click-image-search-result {
+    font-style: italic;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: 25px;
+
+}

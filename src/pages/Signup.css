@@ -58,5 +58,12 @@ fieldset {
     display: flex;
     justify-content: center;
     margin-left: 100px;
+}
 
+#click-artist-signup {
+    font-style: italic;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: 60px;
+    width: 200px;
 }

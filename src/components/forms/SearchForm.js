@@ -1,7 +1,6 @@
 import axios from "axios";
 import {useForm} from "react-hook-form";
 import React, {useEffect, useState} from 'react';
-import '../components/SearchForm.css';
 
 // import {authContext} from "../contexts/AuthContext";
 

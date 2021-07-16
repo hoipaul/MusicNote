@@ -1,0 +1,23 @@
+.album-result-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.tracklist {
+    margin-left: 20px
+}
+
+#album-info {
+    height: 500px;
+    width: 500px;
+    border-radius: 25px;
+}
+
+.info-text {
+    display: flex;
+    width: auto;
+}
+
+#return-info {
+    margin-top: 50px;
+}

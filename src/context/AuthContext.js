@@ -3,7 +3,7 @@ import axios from 'axios';
 import jwt_decode from 'jwt-decode';
 import {useHistory} from 'react-router-dom';
 
-export const authContext = createContext({});
+export const AuthContext = createContext({});
 
 export default function AuthContextProvider({children}) {
     const [authState, setAuthState] = useState({
@@ -45,7 +45,7 @@ export default function AuthContextProvider({children}) {
         console.log(decodedToken);
         const userId = decodedToken.sub;
 
-        fetchUserData(jwtToken);
+        fetchUserData(jwtToken, userId);
     }
 
     async function fetchUserData(token) {
@@ -87,11 +87,13 @@ export default function AuthContextProvider({children}) {
     };
 
     return (
-        <authContext.Provider value={data}>
+        <AuthContext.Provider value={data}>
             {authState.status === 'pending'
-                ? <p>Loading...</p>
+                ? children
                 : children
             }
-        </authContext.Provider>
+        </AuthContext.Provider>
     );
 };
+
+// eerste children vervangen in <p>Loading...</p>

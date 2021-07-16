@@ -1,8 +1,7 @@
 import React from "react";
-import '../pages/About.css';
-import spotlight from "../assets/spotlights.jpeg";
 import artist_banner from "../assets/artist_banner.jpg";
 import Footer from "../components/Footer";
+import '../pages/About.css';
 
 export default function About() {
     return (
@@ -17,17 +16,20 @@ export default function About() {
                     Veel plezier met het gebruiken ervan!
                 </p>
                 <p>
-                    Mede mogelijk gemaakt door MusicBrainz &#169;
+                    Mede mogelijk gemaakt door MusicBrainz &#169; & NOVI.
                 </p>
                 <p>
+                    Muziek infoteksten bedacht en geschreven door Paul.
                     All rights reserved &#169; 2021
                 </p>
             </article>
             <figure>
-                <img id="artist_banner" src={artist_banner} alt="artist banner"/>
+                <img id="artist_banner" src={artist_banner} alt="artist banner"
+                     title="v.l.n.r.: Prince - Mark Knopfler - Guns 'n Roses - James Brown - Whitney Houston - Robbie Williams"/>
             </figure>
             <figure>
-                <img id="spotlight" src={spotlight} alt="spotlight"/>
+                <img id="random" src="https://source.unsplash.com//1200x400/?band" alt="band"
+                     title="Bedankt voor het gebruiken van de MusicNote &#8482; App!"/>
             </figure>
             <Footer/>
         </>

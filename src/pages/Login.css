@@ -25,3 +25,11 @@
 form {
     background-color: #A9E4EF;
 }
+
+#click-artist-login {
+    font-style: italic;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: 50px;
+    width: 200px;
+}

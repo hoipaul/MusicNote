@@ -2,16 +2,16 @@ import axios from "axios";
 import {useForm} from "react-hook-form";
 import React, {useContext, useState} from 'react';
 import {Link, useHistory} from "react-router-dom";
-import {authContext} from "../context/AuthContext";//deze regel aan -> inlogmelding weg
-import '../components/LoginForm.css';
+import {AuthContext} from "../../context/AuthContext";//deze regel aan -> inlogmelding weg
+import './LoginForm.css';
 
 export default function LoginForm() {
 
-    const {handleSubmit, register, formState: {errors, isDirty, isValid}} = useForm({mode: "onChange"});
+    const {handleSubmit, register, formState: {errors, isDirty, isValid, loading}} = useForm({mode: "onChange"});
     const [error, setError] = useState('');
-    // const {login} = useContext(authContext);//deze regel -> inlogmelding weg
+    const {login} = useContext(AuthContext);//deze regel -> inlogmelding weg
     const history = useHistory();
-    const [loginSuccess, toggleLoginSuccess] = useState(false);
+    const [isAuthenticated, toggleIsAuthenticated] = useState(false);
 
     async function onSubmit(data) {
         console.log(data);
@@ -19,9 +19,9 @@ export default function LoginForm() {
         try {
             const result = await axios.post(`https://polar-lake-14365.herokuapp.com/api/auth/signin`, data);
             console.log(result);
-            // login(result.data.accessToken);// deze regel -> inlogmelding weg
+            login(result.data.accessToken);// deze regel aan -> app blijft op loading hangen
 
-            toggleLoginSuccess(true);
+            toggleIsAuthenticated(true);
             setTimeout(() => {
                 history.push('/profile');
             }, 2000);
@@ -30,6 +30,7 @@ export default function LoginForm() {
             console.error(e);
             setError(`Inloggen mislukt. Probeer a.u.b. opnieuw (${e.message})`);
         }
+        // toggleIsAuthenticated(false); //toegevoegd dan geen succesmelding
     }
 
     return (
@@ -89,14 +90,14 @@ export default function LoginForm() {
                     <button
                         type="submit"
                         className="form-button"
-                        disabled={!isDirty || !isValid}
+                        disabled={!isDirty || !isValid || loading}
                     >Inloggen
                     </button>
-                    {loginSuccess === true &&
+                    {isAuthenticated === true &&
                     <p>Inloggen is gelukt! Je wordt nu doorgestuurd naar jouw profielpagina!</p>}
                     {error && <p className="error-message">{error}</p>}
                 </form>
-                <h3>Een eigen gratis account aanmaken? Klik dan <Link to="/signup">hier!</Link>.</h3>
+                <h3>Een eigen gratis account aanmaken? Klik dan <Link to="/signup">hier!</Link></h3>
             </fieldset>
         </div>
     )

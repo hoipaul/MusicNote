@@ -1,0 +1,47 @@
+.artist-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.artist-info {
+    width: 50%;
+}
+
+.artist-image {
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+    height: 30%;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.official-site {
+    align-self: center
+}
+
+#image {
+    height: 50%;
+    border-radius: 25px;
+}
+
+#highlight-one {
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    margin-right: 20px;
+}
+
+#highlight-two {
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    margin-right: 20px;
+}
+
+#highlight-three {
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    margin-right: 20px;
+}

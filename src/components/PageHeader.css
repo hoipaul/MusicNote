@@ -14,3 +14,7 @@
     height: auto;
     width: 35%;
 }
+
+#header:hover {
+    cursor: pointer;
+}

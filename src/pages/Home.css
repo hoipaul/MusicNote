@@ -1,4 +1,4 @@
-#homeImage {
+#home-image {
     width: 100%;
     height: 100%;
     border-radius: 25px;
@@ -24,4 +24,33 @@
 
 #popular-container {
     margin-top: 40px;
+}
+
+#scroll-button {
+    background-color: #8E8DBE;
+    border-color: #8E8DBE;
+    color: #7A306C;
+    font-size: 17px;
+    margin-left: 0px;
+}
+
+#scroll-button:hover {
+    cursor: pointer;
+}
+
+#click-image-home {
+    font-style: italic;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top:20px;
+}
+
+.click-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#hand-symbol {
+    margin-top:0px;
 }

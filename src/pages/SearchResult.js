@@ -17,8 +17,11 @@ export default function SearchResult() {
             <div className="search-result-container">
                 <div className="album-cover">
                     <a href="https://www.daftpunk.com">
-                        <img id="album-result" src={daft_punk} alt="daft punk"/>
+                        <img id="album-result" src={daft_punk} alt="daft punk" title={"Random access memories"}/>
                     </a>
+                    <div className="click-box">
+                    <h2>☞</h2><h3 id="click-image-search-result">Klik op de albumhoes om naar de website van de artiest te gaan</h3>
+                    </div>
                 </div>
                 <div className="album-specs">
                     <h2>Artiest: Daft Punk</h2>

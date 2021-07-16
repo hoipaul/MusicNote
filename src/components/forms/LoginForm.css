@@ -1,5 +1,5 @@
 .login-field {
- margin-left: 30px;
+    margin-left: 30px;
 }
 
 form {
@@ -27,7 +27,7 @@ button {
     margin-left: 35px;
 }
 
-#email-field{
+#email-field {
     border-radius: 4px;
     border: 2px solid;
 }

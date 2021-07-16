@@ -39,7 +39,7 @@ Hiermee worden alle benodigde dependencies voor de app geinstalleerd.
 
 ### 2. `npm start`
 
-Door dit commando in te voeren in het terminalvenster wordt de app geopend in je browser.
+Door dit commando in te voeren in het terminalvenster wordt de applicatie geopend in je browser.
 
 (In de IDE WebStorm kun je hiervoor ook de knop (npm start) gebruiken.)
 
@@ -65,6 +65,6 @@ Wanneer je inlogpoging succesvol is zie je hier een melding van en word je vanze
 
 ### `npm test`
 
-Hiermee kunnen de helper-functies worden getest.
+Hiermee kunnen de helper-functies worden getest in het App.test bestand in de root-folder.
 
 Meer informatie hierover is te vinden in de React documentatie.

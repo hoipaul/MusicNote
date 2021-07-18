@@ -2,13 +2,13 @@ import React from "react";
 import AlbumInfo from "../../components/musicInfo/AlbumInfo";
 import ninety from "../../assets/albumCovers/ninety.jpg";
 
-export default function AlbumDangerous() {
+export default function Album1999() {
     return (
         <>
             <AlbumInfo
                 img={ninety}
                 imgAlt={"1999"}
-                imgTitle={"De albumhoes van '1999'."}
+                imgTitle={"De albumhoes van '1999'"}
                 infoText={"Met zijn bekende 'synthesizer en drum'-geluid, kan deze plaat volgens de Rolling Stone Album Guide misschien wel het invloedrijkste album van Prince worden genoemd. Deze sound werd door veel producers in de jaren '80 en daarna overgenomen. In 2019 werd er van het album een 'Super-Deluxe Edition' uitgebracht met daarop veel bonusmateriaal."}
                 artist={"Prince"}
                 album={"1999"}

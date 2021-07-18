@@ -2,14 +2,14 @@ import axios from "axios";
 import {useForm} from "react-hook-form";
 import React, {useContext, useState} from 'react';
 import {Link, useHistory} from "react-router-dom";
-import {AuthContext} from "../../context/AuthContext";//deze regel aan -> inlogmelding weg
+import {AuthContext} from "../../context/AuthContext";
 import './LoginForm.css';
 
 export default function LoginForm() {
 
     const {handleSubmit, register, formState: {errors, isDirty, isValid, loading}} = useForm({mode: "onChange"});
     const [error, setError] = useState('');
-    const {login} = useContext(AuthContext);//deze regel -> inlogmelding weg
+    const {login} = useContext(AuthContext);
     const history = useHistory();
     const [isAuthenticated, toggleIsAuthenticated] = useState(false);
 
@@ -30,7 +30,6 @@ export default function LoginForm() {
             console.error(e);
             setError(`Inloggen mislukt. Probeer a.u.b. opnieuw (${e.message})`);
         }
-        // toggleIsAuthenticated(false); //toegevoegd dan geen succesmelding
     }
 
     return (

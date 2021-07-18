@@ -1,0 +1,60 @@
+.search-result-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#artist-result {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+#related-result {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.artist-specs {
+    align-items: flex-start;
+    margin-left: 20px;
+    width: 50%;
+}
+
+.artist-cover {
+    margin-top: 50px;
+}
+
+.album-list {
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 70%
+}
+
+#return-button {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+#return-button:hover {
+    cursor: pointer;
+}
+
+#click-image-search-result {
+    font-style: italic;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: 25px;
+}
+
+.related-artists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.related-box {
+    margin-left: 50px;
+}

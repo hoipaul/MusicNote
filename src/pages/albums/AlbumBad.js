@@ -8,7 +8,7 @@ export default function AlbumBad() {
             <AlbumInfo
                 img={bad}
                 imgAlt={"Bad"}
-                imgTitle={"'Michael Jackson verschijnt in 1987 op de hoes van 'Bad' met een totaal ander uiterlijk dan op de hoes van 'Thriller', 5 jaar eerder."}
+                imgTitle={"Michael Jackson verschijnt in 1987 op de hoes van 'Bad' met een totaal ander uiterlijk dan op de hoes van 'Thriller', 5 jaar eerder."}
                 infoText={"'Bad' was de langverwachte opvolger van 'Thriller'. Het verkoopsucces van zijn voorgaande album kon Jackson niet overtreffen, maar desondanks was dit album een enorm commercieel succes. Er werden maar liefst 9 nummers als single uitgebracht; een extreem hoog aantal voor één album. Het album werd gepromoot met de film 'Moonwalker'."}
                 artist={"Michael Jackson"}
                 album={"Bad"}

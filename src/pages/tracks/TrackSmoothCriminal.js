@@ -18,7 +18,7 @@ export default function TrackSmoothCriminal() {
                 infoImg={smooth_criminal}
                 infoImgAlt={"De magische leun"}
                 infoImgTitle={"De bekende leun-beweging uit de videoclip van 'Smooth criminal'."}
-                returnToAlbum={"'Bad'"}
+                returnToAlbum={"Bad"}
                 artistPageReturn={"/albumBad"}
             />
         </>

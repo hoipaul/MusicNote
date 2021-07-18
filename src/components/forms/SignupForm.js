@@ -7,7 +7,6 @@ export default function SignupForm() {
     const [loading, toggleLoading] = useState(false);
     const [error, setError] = useState('');
     const [registerSuccess, toggleRegisterSuccess] = useState(false);
-
     const history = useHistory();
     const {handleSubmit, register, formState: {errors, isDirty, isValid}} = useForm({mode: "onChange"});
 

@@ -21,10 +21,10 @@ export default function Signup() {
                 <fieldset>
                     <figure className="artists">
                         <Link to="./prince">
-                            <img id="Prince" src={prince} alt="Prince" title="Prince in het Sportpaleis Antwerpen, 2009"/>
+                            <img id="Prince" src={prince} alt="Prince" title="Prince in het Sportpaleis Antwerpen, 2009. KLIK VOOR MEER INFO!"/>
                         </Link>
                         <Link to="./elvis">
-                        <img id="Elvis" src={elvis} alt="Elvis" title="Elvis Presley tijdens zijn concert 'Aloha in Hawaii', 1973"/>
+                        <img id="Elvis" src={elvis} alt="Elvis" title="Elvis Presley tijdens zijn concert 'Aloha in Hawaii', 1973. KLIK VOOR MEER INFO!"/>
                         </Link>
                     </figure>
                 </fieldset>

@@ -17,11 +17,10 @@ export default function HomePage() {
                      title="Welkom bij MusicNote &#8482;"/></figure>
             <div id="page-container">
                 <h1>Welkom bij de MusicNote App &#8482;</h1>
-                <h2>Voor liefhebbers van muziek van alle genres!
-                </h2>
+                <h2>Voor liefhebbers van muziek van alle genres!</h2>
                 <p>Zoek informatie op over jouw favoriete artiest!</p>
-                <p>Welke muziek vind jij vandaag? Het beste album uit de jaren '90 of je favoriete nummer
-                    aller tijden?</p>
+                <p>Welke muziek vind jij vandaag? Het beste album uit de jaren '90 of jouw favoriete nummer aller
+                    tijden?</p>
                 <h3>Navigeer in het menu <button id="scroll-button"
                                                  type=" submit"
                                                  onClick={ScrollToTop}>HIER BOVEN</button> naar de pagina die je wil
@@ -61,7 +60,8 @@ export default function HomePage() {
                     </section>
                 </fieldset>
                 <div className="click-box">
-                <h1 id="hand-symbol">☞</h1><h3 id="click-image-home">Klik op een album om naar de website van de artiest te gaan</h3>
+                    <h1 id="hand-symbol">☞</h1><h3 id="click-image-home">Klik op een album om naar de website van de
+                    artiest te gaan</h3>
                 </div>
             </div>
             <Footer/>

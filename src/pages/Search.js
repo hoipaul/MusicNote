@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom';
 import SearchForm from "../components/forms/SearchForm";
 import AlbumBlock from "../components/AlbumBlock";
 import Footer from "../components/Footer";
-import '../pages/Search.css';
 import mayer from "../assets/albumCovers/mayer.jpg";
 import queen from "../assets/albumCovers/queen.jpg";
 import perry from "../assets/albumCovers/perry.jpeg";
@@ -13,6 +12,7 @@ import wonder from "../assets/albumCovers/wonder.jpg";
 import no_doubt from "../assets/albumCovers/no_doubt.jpeg";
 import abbey from "../assets/albumCovers/abbey.jpeg";
 import tina from "../assets/albumCovers/tina.jpeg";
+import '../pages/Search.css';
 
 export default function Search() {
 
@@ -24,7 +24,8 @@ export default function Search() {
                     <h2>Zoek hier naar al jouw favoriete muziek!</h2>
                     <SearchForm/>
                     <div className="click-box">
-                    <h1>☞</h1><h3 id="click-artist-search">Klik op een album om naar de website van de artiest te gaan</h3>
+                        <h1>☞</h1>
+                        <h3 id="click-artist-search">Klik op een album om naar de website van de artiest te gaan</h3>
                     </div>
                     <h3 id="home-link">Terug naar <Link to="/">Home</Link></h3>
                 </div>
@@ -35,7 +36,7 @@ export default function Search() {
                             img={mayer}
                             title={"John Mayer - 'Battle studies' (2009)"}
                             alt={"John Mayer - 'Battle studies' (2009)"}
-                    />
+                        />
                     </div>
                     <div>
                         <AlbumBlock

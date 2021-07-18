@@ -44,7 +44,6 @@ export default function AlbumInfo({
                                       artistPageReturn,
                                       trackLink
                                   }) {
-
     return (
         <>
             <h1>Uitgelicht album:</h1>
@@ -58,18 +57,25 @@ export default function AlbumInfo({
                     <h3>Jaar: {year}</h3>
                     <h3>Genre: {genre}</h3>
                     <h3>Label: {label}</h3>
-                    <h3>Album-feitjes:</h3>
+                    <h3>Albumfeitjes:</h3>
                     <div className="info-text">{infoText}</div>
                 </div>
                 <div className="tracklist">
                     <h3>Tracklist:</h3>
-                    <p>1. {track1} {playtime1}</p><p>2. {track2} {playtime2}</p><p>3. {track3} {playtime3}</p>
-                    <p>4. {track4} {playtime4}</p><p>5. {track5} {playtime5}</p><p>6. {track6} {playtime6}</p>
-                    <p>7. {track7} {playtime7}
-                    </p><p>8. {track8} {playtime8}</p><p>9. {track9} {playtime9}</p>
-                    <Link to={trackLink}><p>{track10} {playtime10}</p></Link><p>{track11} {playtime11}</p>
+                    <p>1. {track1} {playtime1}</p>
+                    <p>2. {track2} {playtime2}</p>
+                    <p>3. {track3} {playtime3}</p>
+                    <p>4. {track4} {playtime4}</p>
+                    <p>5. {track5} {playtime5}</p>
+                    <p>6. {track6} {playtime6}</p>
+                    <p>7. {track7} {playtime7}</p>
+                    <p>8. {track8} {playtime8}</p>
+                    <p>9. {track9} {playtime9}</p>
+                    <Link to={trackLink}><p>{track10} {playtime10}</p></Link>
+                    <p>{track11} {playtime11}</p>
                     <p>{track12} {playtime12}</p>
-                    <p>{track13} {playtime13}</p><p>{track14} {playtime14}</p>
+                    <p>{track13} {playtime13}</p>
+                    <p>{track14} {playtime14}</p>
                 </div>
             </div>
             <div className="click-box">

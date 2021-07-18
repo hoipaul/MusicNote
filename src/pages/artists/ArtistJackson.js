@@ -18,13 +18,13 @@ export default function ArtistJackson() {
                 URL={"https://www.michaeljackson.com"}
                 URLname={"www.michaeljackson.com"}
                 img={feet}
-                title={"Michael Jackson op het podium met zijn beroemde witte sokken"}
+                title={"Michael Jackson op het podium met zijn beroemde witte sokken."}
                 highlightOne={thriller}
-                albumOne={"Thriller (1982)"}
+                albumOne={"Thriller (1982) KLIK VOOR MEER INFO!"}
                 highlightTwo={bad}
-                albumTwo={"Bad (1987)"}
+                albumTwo={"Bad (1987) KLIK VOOR MEER INFO!"}
                 highlightThree={dangerous}
-                albumThree={"Dangerous (1991)"}
+                albumThree={"Dangerous (1991) KLIK VOOR MEER INFO!"}
                 pageOne={"./albumThriller"}
                 pageTwo={"./albumBad"}
                 pageThree={"./albumDangerous"}

@@ -18,7 +18,7 @@ export default function TrackGiveInToMe() {
                 infoImg={slash_live}
                 infoImgAlt={"Give in to me"}
                 infoImgTitle={"Michael Jackson samen op het podium met Slash"}
-                returnToAlbum={"'Dangerous'"}
+                returnToAlbum={'Dangerous'}
                 artistPageReturn={"/albumDangerous"}
             />
         </>

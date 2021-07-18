@@ -5,7 +5,6 @@ import {AuthContext} from '../context/AuthContext';
 import earphones from "../assets/earphones.jpeg";
 import RegionSelect from "../components/RegionSelect";
 import Footer from "../components/Footer";
-import '../pages/Search.css';
 import '../pages/Profile.css';
 
 export default function Profile() {

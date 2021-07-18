@@ -1,6 +1,6 @@
 import React from 'react';
-import '../components/PageHeader.css';
 import {useHistory} from 'react-router-dom';
+import '../components/PageHeader.css';
 
 export default function PageHeader({icon, title, headerTitle}) {
     const history = useHistory();

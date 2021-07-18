@@ -15,9 +15,7 @@ export default function TrackInfo({
                                       infoImgTitle,
                                       returnToAlbum,
                                       artistPageReturn,
-
                                   }) {
-
     return (
         <>
             <h1>Uitgelichte single:</h1>
@@ -26,7 +24,7 @@ export default function TrackInfo({
                     <img id="single-info" src={img} alt={imgAlt} title={imgTitle}/>
                 </div>
                 <div className="single-specs">
-                    <h2>{trackName}</h2>
+                    <h2>"{trackName}"</h2>
                     <h3>Geschreven door {composers}</h3>
                     <h3>Producers: {producers}</h3>
                     <div className="info-text">
@@ -38,7 +36,7 @@ export default function TrackInfo({
                 </div>
             </div>
             <div className="click-box">
-                <h1>☞</h1><h3 id="return-info"> Terug naar het album {returnToAlbum}? Klik dan <Link
+                <h1>☞</h1><h3 id="return-info"> Terug naar het album "{returnToAlbum}"? Klik dan <Link
                 to={artistPageReturn}>hier!</Link></h3>
             </div>
         </>

@@ -8,7 +8,7 @@ export default function AlbumDangerous() {
             <AlbumInfo
                 img={musicology}
                 imgAlt={"Musicology"}
-                imgTitle={"'Musicology'."}
+                imgTitle={"De albumhoes van 'Musicology'"}
                 infoText={"Het R&B-georiënteerde 'Musicology' is het 28ste studio-album van Prince. Hij won er twee Grammy-awards mee. Het titelnummer 'Musicology', 'Call my name' en 'Cinnamon girl' werden als singles uitgebracht. Ook de Nederlandse saxofoniste Candy Dulfer speelt een deuntje mee op enkele nummers van dit album."}
                 artist={"Prince"}
                 album={"Musicology"}

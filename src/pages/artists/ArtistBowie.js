@@ -1,6 +1,6 @@
 import React from "react";
 import ArtistInfo from "../../components/musicInfo/ArtistInfo";
-import sane from "../../assets/artistsMisc/sane.jpeg"
+import sane from "../../assets/artistsMisc/sane.jpeg";
 import heroes from "../../assets/albumCovers/heroes.jpg";
 import low from "../../assets/albumCovers/low.jpg";
 import young_americans from "../../assets/albumCovers/young_americans.jpg";

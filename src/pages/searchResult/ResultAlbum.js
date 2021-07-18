@@ -1,10 +1,9 @@
 import React from 'react';
 import {useHistory} from 'react-router-dom';
-import daft_punk from "../assets/albumCovers/daft_punk.jpeg";
-import Footer from "../components/Footer";
-import '../pages/SearchResult.css';
+import daftPunk from "../../assets/albumCovers/daft_punk.jpeg"
+import './ResultAlbum.css';
 
-export default function SearchResult() {
+export default function ResultAlbum() {
     const history = useHistory();
 
     function NewSearch() {
@@ -13,14 +12,15 @@ export default function SearchResult() {
 
     return (
         <>
-            <h1>Zoekresultaat</h1>
+            <h1>Zoekresultaat:</h1>
             <div className="search-result-container">
                 <div className="album-cover">
                     <a href="https://www.daftpunk.com">
-                        <img id="album-result" src={daft_punk} alt="daft punk" title={"Random access memories"}/>
+                        <img id="album-result" src={daftPunk} alt="daft punk" title={"Random access memories"}/>
                     </a>
                     <div className="click-box">
-                    <h2>☞</h2><h3 id="click-image-search-result">Klik op de albumhoes om naar de website van de artiest te gaan</h3>
+                        <h2>☞</h2><h3 id="click-image-search-result">Klik op de albumhoes om naar de website van de
+                        artiest te gaan</h3>
                     </div>
                 </div>
                 <div className="album-specs">
@@ -32,9 +32,15 @@ export default function SearchResult() {
                 </div>
                 <div className="tracklist">
                     <h3>Tracklist:</h3>
-                    <p>1. Give life back to music (4:34)</p><p>2. The game of love (5:21)</p><p>3. Giorgio by Moroder
-                    (9:04)</p><p>4. Within (3:48)</p><p>5. Instant crush (5:37)</p><p>6. Lose yourself (5:53)</p><p>7.
-                    Touch (8:18)</p><p>8. Get lucky (6:07)</p><p>9. Beyond (4:50)</p>
+                    <p>1. Give life back to music (4:34)</p>
+                    <p>2. The game of love (5:21)</p>
+                    <p>3. Giorgio by Moroder (9:04)</p>
+                    <p>4. Within (3:48)</p>
+                    <p>5. Instant crush (5:37)</p>
+                    <p>6. Lose yourself (5:53)</p>
+                    <p>7. Touch (8:18)</p>
+                    <p>8. Get lucky (6:07)</p>
+                    <p>9. Beyond (4:50)</p>
                     <p>10. Motherboard (5:41)</p>
                 </div>
             </div>
@@ -43,7 +49,6 @@ export default function SearchResult() {
                     onClick={NewSearch}
             >Nieuwe zoekopdracht
             </button>
-            <Footer/>
         </>
     );
 };

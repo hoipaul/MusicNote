@@ -1,0 +1,36 @@
+.search-result-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#album-result {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.album-specs {
+    margin-left: 20px;
+    width: 50%;
+}
+
+.tracklist {
+    width: 50%
+}
+
+#return-button {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+#return-button:hover {
+    cursor: pointer;
+}
+
+#click-image-search-result {
+    font-style: italic;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: 25px;
+
+}

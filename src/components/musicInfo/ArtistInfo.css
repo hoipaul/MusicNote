@@ -16,6 +16,11 @@
     margin-left: 20px;
 }
 
+#image {
+    width: 90%;
+    height: 90%;
+}
+
 .official-site {
     align-self: center
 }

@@ -8,20 +8,28 @@ export default function About() {
         <>
             <h1>Aanvullende informatie over dit project</h1>
             <article>
-                <p>
-                    Deze app is ontworpen door Paul Hermans, als eindopdracht voor de opleiding front-end
-                    development van NOVI Hogeschool.
-                </p>
-                <p>
-                    Veel plezier met het gebruiken ervan!
-                </p>
-                <p>
-                    Mede mogelijk gemaakt door MusicBrainz &#169; & NOVI.
-                </p>
-                <p>
-                    Muziek infoteksten bedacht en geschreven door Paul.
-                    All rights reserved &#169; 2021
-                </p>
+                <fieldset className="fieldset-about">
+                    <p>
+                        Deze app is ontworpen door Paul Hermans, als eindopdracht voor de opleiding front-end
+                        development van NOVI Hogeschool.
+                    </p>
+                    <p>
+                        Veel plezier met het gebruik van MusicNote &#8482;!
+                    </p>
+                </fieldset>
+                <fieldset className="fieldset-about">
+                    <p>
+                        Mede mogelijk gemaakt door MusicBrainz &#38; NOVI.
+                    </p>
+                    <p>
+                        Originele informatieve teksten bij de muziekinfo bedacht en geschreven door Paul.
+                    </p>
+                </fieldset>
+                <fieldset className="fieldset-about">
+                    <p>
+                        <p>All rights reserved &#169; 2021</p>
+                    </p>
+                </fieldset>
             </article>
             <figure>
                 <img id="artist_banner" src={artist_banner} alt="artist banner"

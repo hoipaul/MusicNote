@@ -18,3 +18,14 @@
     border-radius: 25px;
     margin-top: 20px;
 }
+
+.fieldset-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 25px;
+    margin-left: 10px;
+    width: auto;
+    /*height: 150px;*/
+    background-color: #A9E4EF;
+}

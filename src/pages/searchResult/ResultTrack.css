@@ -1,15 +1,15 @@
-.search-result-container {
+.track-result-container {
     display: flex;
     flex-direction: row;
 }
 
-#album-result {
+#single-result {
     height: 300px;
     width: 300px;
     border-radius: 10px;
 }
 
-.album-specs {
+.single-specs {
     margin-left: 20px;
     width: 50%;
 }
@@ -19,6 +19,7 @@
 }
 
 #return-button {
+    margin-top: 50px;
     font-size: 20px;
 }
 

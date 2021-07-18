@@ -1,12 +1,13 @@
 .search-container {
     display: flex;
     justify-content: center;
-    margin-left: 100px;
 }
 
 .album-block {
-    display: grid;
-    grid-template-columns: repeat(3, 3fr);
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    align-items: stretch;
 }
 
 #search-artist-field {

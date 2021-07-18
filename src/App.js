@@ -5,19 +5,21 @@ import TopMenu from "./components/TopMenu";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Login from "./pages/Login";
-import Album1999 from "./pages/albums/Album1999"
-import AlbumBad from "./pages/albums/AlbumBad"
-import AlbumDangerous from "./pages/albums/AlbumDangerous"
-import AlbumMusicology from "./pages/albums/AlbumMusicology"
-import AlbumPurpleRain from "./pages/albums/AlbumPurpleRain"
-import AlbumThriller from "./pages/albums/AlbumThriller"
+import Album1999 from "./pages/albums/Album1999";
+import AlbumBad from "./pages/albums/AlbumBad";
+import AlbumDangerous from "./pages/albums/AlbumDangerous";
+import AlbumMusicology from "./pages/albums/AlbumMusicology";
+import AlbumPurpleRain from "./pages/albums/AlbumPurpleRain";
+import AlbumThriller from "./pages/albums/AlbumThriller";
 import ArtistBowie from "./pages/artists/ArtistBowie";
 import ArtistElvis from "./pages/artists/ArtistElvis";
 import ArtistJackson from "./pages/artists/ArtistJackson";
 import ArtistPrince from "./pages/artists/ArtistPrince";
 import Profile from "./pages/Profile";
 import Search from "./pages/Search";
-import SearchResult from "./pages/SearchResult";
+import ResultAlbum from "./pages/searchResult/ResultAlbum";
+import ResultArtist from "././pages/searchResult/ResultArtist";
+import ResultTrack from "./pages/searchResult/ResultTrack";
 import Signup from "./pages/Signup";
 import TrackGiveInToMe from "./pages/tracks/TrackGiveInToMe";
 import TrackSmoothCriminal from "./pages/tracks/TrackSmoothCriminal";
@@ -94,8 +96,14 @@ export default function App() {
                     <PrivateRoute exact path="/profile" isAuth={authState}>
                         <Profile/>
                     </PrivateRoute>
-                    <PrivateRoute exact path="/searchResult" isAuth={authState}>
-                        <SearchResult/>
+                    <PrivateRoute exact path="/resultArtist" isAuth={authState}>
+                        <ResultArtist/>
+                    </PrivateRoute>
+                    <PrivateRoute exact path="/resultAlbum" isAuth={authState}>
+                        <ResultAlbum/>
+                    </PrivateRoute>
+                    <PrivateRoute exact path="/resultTrack" isAuth={authState}>
+                        <ResultTrack/>
                     </PrivateRoute>
                     <Route path="/about">
                         <About/>

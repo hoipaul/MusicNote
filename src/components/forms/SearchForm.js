@@ -1,15 +1,27 @@
 import axios from "axios";
 import {useForm} from "react-hook-form";
-import React, {useEffect, useState} from 'react';
-
-// import {authContext} from "../contexts/AuthContext";
+import React, {useState} from 'react';
+import {useHistory} from "react-router-dom";
 
 export default function Search() {
-    const {handleSubmit, register, formState: {errors, isDirty, isValid}} = useForm({mode: "onChange"});
+    const {handleSubmit, register, formState: {errors}} = useForm({mode: "onChange"});
     const onSubmit = (data) => JSON.stringify(data);
     const [artistData, setArtistData] = useState({});
     const [albumData, setAlbumData] = useState({});
     const [trackData, setTrackData] = useState({});
+    const history = useHistory();
+
+    function searchArtistSuccess() {
+        history.push('/resultArtist')
+    }
+
+    function searchAlbumSuccess() {
+        history.push('/resultAlbum')
+    }
+
+    function searchTrackSuccess() {
+        history.push('/resultTrack')
+    }
 
     async function fetchArtistData() {
         try {
@@ -69,10 +81,12 @@ export default function Search() {
 
                     </label>
                     <button id="artist-search-button"
-                            onClick={() => fetchArtistData(true)}
+                            onClick={() => {
+                                fetchArtistData(true);
+                                searchArtistSuccess();
+                            }}
                             type="submit"
                             className="form-button"
-                            disabled={!isDirty || !isValid}
                     >Zoek artiest
                     </button>
                     <label htmlFor="search-album">
@@ -91,10 +105,12 @@ export default function Search() {
                         {errors.searchAlbum && <p className="error-message">{errors.searchAlbum.message}</p>}
                     </label>
                     <button id="album-search-button"
-                            onClick={() => fetchAlbumData()}
+                            onClick={() => {
+                                fetchAlbumData(true);
+                                searchAlbumSuccess();
+                            }}
                             type="submit"
                             className="form-button"
-                            disabled={!isDirty || !isValid}
                     >Zoek album
                     </button>
                     <label htmlFor="search-track">
@@ -113,10 +129,12 @@ export default function Search() {
                         {errors.searchTrack && <p className="error-message">{errors.searchTrack.message}</p>}
                     </label>
                     <button id="track-search-button"
-                            onClick={() => fetchTrackData()}
+                            onClick={() => {
+                                fetchTrackData(true);
+                                searchTrackSuccess();
+                            }}
                             type="submit"
                             className="form-button"
-                            disabled={!isDirty || !isValid}
                     >Zoek track
                     </button>
                 </form>

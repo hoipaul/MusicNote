@@ -8,7 +8,7 @@ export default function AlbumDangerous() {
             <AlbumInfo
                 img={purple_rain}
                 imgAlt={"Purple rain"}
-                imgTitle={"Prince op zijn motor, zoals hij te zien is in de film 'Purple rain'."}
+                imgTitle={"Prince op zijn motor, zoals hij te zien is in de film 'Purple rain'"}
                 infoText={"'Purple rain' is verreweg het bekendste album van Prince, met de titelsong als zijn magnum opus. De meeste artiesten raken op een gegeven moment vaak wel een beetje klaar met het live performen van hun allerbekendste nummer. Prince had hier echter totaal geen problemen mee en nam het steevast op in de setlists van zijn concerten."}
                 artist={"Prince"}
                 album={"Purple rain"}
